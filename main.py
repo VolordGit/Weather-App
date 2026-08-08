@@ -1,9 +1,10 @@
 import requests
 from scipy.constants import convert_temperature
+from dotenv import load_dotenv
 import os
 
-
-api_key = "8d84bc6b5317cd86ebd5757238144054"
+load_dotenv()
+api_key = os.getenv("API_KEY")
 
 
 while True:
